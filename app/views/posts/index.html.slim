@@ -1,0 +1,11 @@
+p style="color: green" = notice
+
+h1 Общение
+
+#posts
+  - @posts.each do |post|
+    == render post
+    p
+      = link_to "Смотреть сообщение", post
+
+= link_to "Новое сообщение", new_post_path

@@ -1,0 +1,10 @@
+h1 Редактирование сообщений
+
+== render "form", post: @post
+
+br
+
+div
+  => link_to "Смотреть сообщение", @post
+  '|
+  =< link_to "Вернуться к списку сообщений", posts_path
